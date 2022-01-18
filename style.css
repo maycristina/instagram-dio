@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: #FAFAFA;
     margin: 0;
     padding: 0;
     display: flex;
@@ -33,9 +33,36 @@ body {
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 40rem;
+    
 }
 
+
+.transicao-de-imagem{ 
+    position: absolute;
+    width: 100%;
+    
+   display: flex;
+   justify-content: center;
+  
+    
+}
+
+.transicao-de-imagem img{
+    height: 28.5rem;
+    opacity: 0;
+    
+}
+
+.transicao-de-imagem img.select{
+    opacity: 1;
+    margin-top:0;
+    margin-left:5.5rem;
+    position: absolute;
+    transition:opacity 850ms;
+  
+
+}
 .instagram-continue {
     display: flex;
     align-items: center; /* horizontal */
@@ -64,16 +91,61 @@ body {
     height: 3rem;
 }
 
+.description{
+    color:#8e8e8e;
+    padding: 8px 10px;
+    font-size:13px;
+    width: 300px;
+    text-align:center;
+    line-height:1.2rem;
+    word-spacing: 0.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.line{
+    border-bottom:1px solid #8e8e8e36;
+    width:300px;
+    height: 5px;
+    margin:8px 0;
+}
+
+
+.users{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    justify-content:space-between;
+    padding: 0 8px;
+}
+
+.user-text{
+    font-weight: 600;
+    font-size:12px;
+    width: 80px;
+
+}
+
+.perfil-user-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    margin-left:-160px;
+    justify-content: start;
+
+}
+
 .profile-photo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 60px; 
     overflow: hidden;
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 32px;
 }
 
 .instagram-login {
@@ -81,8 +153,18 @@ body {
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
+    font-size:12px;
+    font-weight: 600;
+    margin-left:80px;
+   
 }
 
+
+.botao-login{
+   
+    justify-content: flex-end;
+    margin-right: -180px;
+}
 .instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
@@ -94,6 +176,8 @@ body {
 
 .link-blue {
     color: #0095f6;
+    font-weight: 600;
+    font-size:14px;
 }
 
 .get-the-app {
@@ -130,19 +214,20 @@ body {
 /* media queries */
 
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .instagram-wrapper {
         width: 90%;
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
     body {
         background-color: #ffffff;
     }
 
     .instagram-wrapper {
         width: 90%;
+        
     }
 
     .instagram-phone {

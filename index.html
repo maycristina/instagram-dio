@@ -4,28 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <title>Instagram</title>
-</head>
+    </head>
 <body>
     <div class="instagram-wrapper">
         <div class="instagram-phone">
-            <img src="./img/instagram-celular.png" alt="celular">
+            <div class="transicao-de-imagem"> 
+                <img src="./img/insta-imagem-tela.jpg" alt="" class="select">
+                <img src="./img/insta-imagem-tela (1).jpg" alt="foto de perfil">
+                <img src="./img/insta-imagem-tela (2).jpg" alt="foto de perfil">
+                <img src="./img/insta-imagem-tela (3).jpg" alt="foto de perfil">
+                <img src="./img/insta-imagem-tela (4).jpg" alt="foto de perfil">
+            </div>
+            <img src="./img/insta-smartphone.png" alt="celular">
         </div>
         <div class="instagram-continue">
             <div class="group">
                 <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <p class="description">Podes iniciar sessão nestas contas uma vez que estão no teu Centro de Contas.</p>
+                <div class="line"></div>
+
+            <div class="users">
                 <div class="profile-photo">
                     <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
-                <a href="#" class="instagram-logout">Remover conta</a>
+                <p class="user-text">sprucegabriela</p>
+
+                <a href="#" class="instagram-login">Iniciar sessão</a>
+            </div>
+
+            <div class="users">
+               
+                    <div class="profile-photo">
+                        <img src="./img/insta-perfil-img (1).jpg" alt="foto de perfil">
+                        
+                    </div>
+                    <p class="user-text">mayara.dsgn  </p>
+               
+                
+                    <a href="#" class="instagram-login">Iniciar sessão</a>
+            
+            </div>
+
+            <div class="users">
+                <div class="profile-photo">
+                    <img src="./img/insta-perfil-img (2).jpg" alt="foto de perfil">
+                </div>
+                <p class="user-text">eumayaracristina</p>
+                
+                <a href="#" class="instagram-login">Iniciar sessão</a>
+            </div>
+                <!-- <a href="#" class="instagram-logout">Remover conta</a> -->
             </div>
             <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
+                
                 <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
+                    <span class="link-blue">Mudar de conta</span>
                     ou
-                    <span class="link-blue">Inscreva-se</span>
+                    <span class="link-blue">Iniciar sessão</span>
                 </p>
             </div>
             <div class="get-the-app">
@@ -37,5 +74,6 @@
             </div>
         </div>
     </div>
+    <script src="transicao.js"></script>
 </body>
 </html>
